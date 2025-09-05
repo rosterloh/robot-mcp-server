@@ -1,0 +1,13 @@
+[package]
+name = "humanoid-mcp-server"
+description = "Query information about the robot"
+authors = ["Richard Osterloh <rio@skl.vc>"]
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0"
+rmcp = { version = "0.6.3", features = ["server", "transport-io"] }
+schemars = "1.0"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1.47.1", features = ["full"] }

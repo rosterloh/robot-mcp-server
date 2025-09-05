@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "DNS Lookup (Dev)": {
+      "command": "cargo",
+      "args": ["run"]
+    }
+  }
+}
