@@ -7,7 +7,14 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1.0"
+reqwest = { version = "0.12", features = ["json"] }
 rmcp = { version = "0.6.3", features = ["server", "transport-io"] }
 schemars = "1.0"
 serde = { version = "1", features = ["derive"] }
 tokio = { version = "1.47.1", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = [
+    "env-filter",
+    "std",
+    "fmt",
+] }
